@@ -7,6 +7,7 @@ import {
   Button,
   Center,
   Flex,
+  Box,
 } from "@chakra-ui/react"
 import { ChevronDownIcon } from '@chakra-ui/icons'
 import Footer from "../components/footer"
@@ -24,6 +25,7 @@ const Home = ({data}) => {
   const items = listKategori.map((list, index) =>
     <MenuItem key={index} onClick={() => listClick(list)}>{list}</MenuItem>
   )
+
 
   const [gameData, setGameData] = useState(
     listBarang.map(({node}, index) =>
@@ -83,7 +85,7 @@ const Home = ({data}) => {
     </Center>
 
     <Layout>
-      <Flex flexFlow="row wrap" justify="center" >
+      <Flex flexFlow="row wrap" justify="center" alignItems="baseline" >
         {gameData}
       </Flex>
     </Layout>
