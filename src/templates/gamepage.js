@@ -100,7 +100,7 @@ export default function GamePage({data}) {
           <Text fontSize="2xl" fontWeight="semibold" textColor="white">Beli sekarang:</Text>
           <Grid templateColumns="repeat(3, 1fr)" gap={2} maxW="full" minW="full" px={4}>
             <GridItem w="100%">
-              <LinkBox as={Button} colorScheme="teal" w="100%" boxShadow="md" h={20} zIndex={90} href={"https://wa.me/6283144342031/?Saya%20Mau%20Order%20"+gameNow.judul.replaceAll(" ", "%20")} isExternal>
+              <LinkBox as={Button} colorScheme="teal" w="100%" boxShadow="md" h={20} zIndex={90} href={"https://wa.me/6283144342031/?Saya%20Mau%20Order%20"+gameNow.slug} isExternal>
                 Order Via <br/> Whatsapp
               </LinkBox>
             </GridItem>
